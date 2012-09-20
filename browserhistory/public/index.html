@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>browsing history</title>
+		<meta name="description" content="browsing history" />
+		<meta name="keywords" content="website keywords, website keywords" />
+		<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine&amp;v1" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" />
+		<link rel="stylesheet" type="text/css" href="style/style.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script>
+			$(function() {
+				$('#raw').click(function() {
+					if (!$(this).hasClass("current")) {
+						$('.nav').toggleClass('current');
+					}
+
+					$('#rawdata').show();
+					$('#groupdata').hide();
+
+				});
+				$('#grouped').click(function() {
+					//do the nav stuff first
+					if (!$(this).hasClass("current")) {
+						$('.nav').toggleClass('current');
+					}
+
+					$('#rawdata').hide();
+					$('#groupdata').show();
+				});
+				
+			});
+		</script>
+	</head>
+
+	<body>
+		<div id="main">
+			<div id="header">
+				<div id="logo">
+					<h1>browsing<a href="#">history</a></h1>
+					<div class="slogan">
+						by Sarah Bird
+					</div>
+				</div>
+				<div id="menubar">
+					<ul id="menu">
+						<!-- put class="current" in the li tag for the selected page - to highlight which page you're on -->
+						<li id="raw" class="nav current">
+							<a href="#">Raw</a>
+						</li>
+						<li id="grouped" class="nav">
+							<a  href="#">Grouped</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="site_content">
+				<!--<a id="refresh" type="submit">refresh</a> THIS SHOULD DO SOMETHING-->
+				<table id="rawdata">
+					<tr>
+						<th>Date</th>
+						<th>Time</th>
+						<th>URL</th>
+					</tr>
+				</table>
+
+				<table id="groupdata">
+					<tr>
+						<th>Date</th>
+						<th>Time</th>
+						<th>URL</th>
+					</tr>
+				</table>
+				
+			</div>
+			<div id="footer">
+				<p>
+					&copy; sarahbird | <a href="http://www.sarahbird.org">app from sarah bird</a>
+				</p>
+				<p>
+					&copy; simplestyle_7 | <a href="http://www.html5webtemplates.co.uk">design from HTML5webtemplates.co.uk</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
