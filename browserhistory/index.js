@@ -1,6 +1,6 @@
 /*USER INPUTS*/
 /*The number of individual history items you would like to aggregate*/
-var number_of_hits = 3000;
+var number_of_hits = 100;
 
 /*Location of your firefox profile - this is where we will look to find you places.sqlite database */
 var location_of_profile = '/home/bird/.mozilla/firefox/14i4gvbc.default/'
