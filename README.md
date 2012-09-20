@@ -27,6 +27,20 @@ Get this repo:
 Go to app directory:
 <pre>cd appjs-browserhistory/browserhistory</pre>
 
+Edit the settings in __index.js__:
+```javascript
+/*USER INPUTS*/
+/*The number of individual history items you would like to aggregate*/
+var number_of_hits = 100;
+
+/*Location of your firefox profile - this is where we will look to find you places.sqlite database */
+var location_of_profile = 'PATH TO YOUR FIREFOX PROFILE'
+
+/*****END OF USER INPUTS******/
+```
+On Ubuntu, for example, your firefox profile is somewhere like: /home/bird/.mozilla/firefox/14i4gvbc.default/
+
 Run the app:
 <pre>node --harmony index.js</pre>
 (note this is the index.js in the directory browserhistory, not the one in the root directory)
+
