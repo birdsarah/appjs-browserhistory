@@ -27,7 +27,7 @@ Get this repo:
 Go to app directory:
 <pre>cd appjs-browserhistory/browserhistory</pre>
 
-Edit the settings in __index.js__:
+Edit the settings in __index.js__ (note this is the index.js in the directory browserhistory, not the one in the root directory):
 ```javascript
 /*USER INPUTS*/
 /*The number of individual history items you would like to aggregate*/
@@ -42,5 +42,5 @@ On Ubuntu, for example, your firefox profile is somewhere like: /home/bird/.mozi
 
 Run the app:
 <pre>node --harmony index.js</pre>
-(note this is the index.js in the directory browserhistory, not the one in the root directory)
+(again, this is the index.js in the directory browserhistory, not the root directory)
 
